@@ -9,6 +9,9 @@ The system is based on a three-tier model:
 * **Application Layer**: EC2 instances in Auto Scaling Groups (ASGs) located in private subnets. Data is shared via the Amazon EFS file system.
 * **Data Layer**: Amazon RDS (MySQL) database in a Multi-AZ configuration.
 
+## Architecture diagram
+![System Architecture](assets/architecture.png)
+
 ## Key Infrastructure Features
 * **High Availability**: Distribution of resources across two Availability Zones.
 * **Security**: Use of private subnets and Security Groups that restrict traffic to only the necessary ports.
